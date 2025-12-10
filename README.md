@@ -1,6 +1,7 @@
 # Detecting-Fake-Bills
 This project leverages descriptive data mining techniques on a dataset pertaining to counterfeit bills, utilizing the k-nearest neighbors algorithm to discern whether a bill is legitimate or counterfeit. The k-nearest neighbor algorithm was selected due to its simplicity, flexibility, and applicability to descriptive data mining tasks. 
 
+# Import necessary libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
@@ -68,5 +69,5 @@ def predict_bill(dimensions):
     return prediction_label
 
 # Example input for the classifier
-example_bill = [30.5, 12.5, 12.0, 0.5, 0.5, 6.5]  # Example dimensions: [diagonal, height_left, height_right, margin_low, margin_upper, length]
+example_bill = [30.5, 12.5, 12.0, 0.5, 0.5, 6.5]  #Example dimensions: [diagonal, height_left, height_right, margin_low, margin_upper, length]
 print(predict_bill(example_bill))
