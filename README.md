@@ -29,7 +29,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 # Initialize KNN classifier with k=3, as suggested
 knn = KNeighborsClassifier(n_neighbors=3)
 
-# Train the classifier
+# Train the KNN classifier
 knn.fit(X_train, y_train)
 
 # Evaluate the classifier using cross-validation
